@@ -24,4 +24,10 @@ public class FelineTest {
         Feline feline = new Feline();
         assertEquals(1, feline.getKittens());
     }
+    @Test
+    public void getKittensWithArgReturnsPassedCount() {
+        Feline feline = new Feline();
+        int kittensCount = 5;
+        assertEquals(kittensCount, feline.getKittens(kittensCount));
+    }
 }
